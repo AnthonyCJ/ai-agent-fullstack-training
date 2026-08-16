@@ -63,7 +63,7 @@ Run:
 
 ```bash
 test "$(sed -n '1p' README.md)" = '# AI Agent 全栈工程师训练营课程代码'
-for path in course_code/week01 course_code/week01/{1-1,1-2,1-3,1-4,1-5,1-6}; do test -d "$path"; done
+for course_dir in course_code/week01 course_code/week01/{1-1,1-2,1-3,1-4,1-5,1-6}; do test -d "$course_dir"; done
 git check-ignore -q .DS_Store
 git check-ignore -q ex_ctx/PPT/week01/1-2.pdf
 git diff --check
